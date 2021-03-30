@@ -1,0 +1,22 @@
+bluish deployment zone RGBa: 173b8280
+orangish deployment zone RGBa: b23c0080
+
+font: Minion pro (paid font) or Times new roman (free)
+
+Old map size:
+  width 28.12500in
+  height 20.62500in
+
+Correct map size:
+  width 30in
+  height 22in
+
+Exported Dimensions (with 18px frame):
+60dpi: 1811x1331 (if larger, may be because dotted lines overextend)
+
+drop pod model radius = 4.75in
+drop pod model base radius=1.5in (circumscribing the pentagonal base)
+
+Orange Map frame = 18px
+Frame Nodes snapped to page (not bounding box)
+Measurement arrows on top of frame layer

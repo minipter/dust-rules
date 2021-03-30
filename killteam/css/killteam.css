@@ -1,0 +1,287 @@
+@import "w3.css";
+
+@font-face {
+  font-family: "gunplay";
+  src: url("fonts/gunplay.tff") format('.tiff');
+  }
+
+html,body {
+  font-size: 10pt;
+  font-family: "Times New Roman",Times, serif;
+  }
+
+body {
+  margin-top: 0in;
+  margin-bottom: 0in;
+  margin-left: 1in;
+  margin-right: 1in;
+  max-width: 6.5in;
+  background-image: url('../images/background-image.png');
+  background-size: 8.5in 11in;
+  }
+
+h1,h2,h3 {
+  font-family: "gunplay", "Saira Stencil One", "Black Ops One", "sans-serif";
+  color:Black;
+  font-weight: bold;
+  margin-top: .2em;
+  margin-bottom: .1em;}
+  }
+
+h4,h5,h6 {
+  font-family: "Times New Roman",Times, serif;
+  }
+
+h1 {color: #c64f1a}
+
+h4 {margin-top: 0em; margin-bottom: 0em; padding-left: 0ex}
+
+/* positions content vertically on page */
+.pagecontent {
+  padding-top: .65in;
+  padding-bottom: .65in;
+  max-height: 9.7in;
+  min-height: 9.7in;
+  background-color: none;
+}
+
+/*KILLZONE: <KILLZONE NAME>*/
+.title {
+  font-family: "stencilfont", "Saira Stencil One", "Black Ops One", "sans-serif";
+  color:#c64f1a;
+  font-weight: bold;
+  font-size: 36pt;
+  text-align: center;
+  text-transform: uppercase;
+  font-stretch: ultra-condensed;
+  }
+
+/*Section title such as MISSIONS*/
+.subtitle {
+  font-family: "stencilfont", "Saira Stencil One", "Black Ops One", "sans-serif";
+  color: #333333;
+  font-weight: bold;
+  font-size: 24pt;
+  text-align: left;
+  text-transform: uppercase;
+  font-stretch: ultra-condensed;
+}
+
+#missiongrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  margin-top: -0px;
+}
+
+#missiontest {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+
+.missionwrapper {
+  height: 50%;
+  width: 48%;
+}
+.missionblurb {}
+.missionblurb h3 {text-align: center;}
+.missionblurb a {margin: auto;}
+.missionblurb .missiontype {
+  font-weight: bold;
+  margin-bottom: 1ex;
+  text-align: center;
+  background-color: pink;
+  }
+
+.missionmap {text-align: center;}
+
+.missionmap img {width: 94%; height: auto;}
+
+.missionlink {
+  color: #c64f1a;
+}
+
+.floatleft {float: left}
+.floatright {float: right}
+.textcenter {text-align: center}
+
+.missionlinksubtitle {
+  font-weight: bold;
+  margin-bottom: 1ex;
+  text-align: center;
+}
+
+/*Mission type, e.g. Matched Play, Narrative Play*/
+.missiontype {
+  font-family: arial, "sans-serif";
+  color: Black;
+  font-weight: bold;
+  font-size: 12pt;
+  text-align: center;
+  text-transform: uppercase;
+  font-stretch: ultra-condensed;
+  margin-bottom: -1ex;
+  page-break-before: always;
+}
+
+.missionname {
+  font-family: "stencilfont", "Saira Stencil One", "Black Ops One", "sans-serif";
+  color: #c64f1a;
+  font-weight: bold;
+  font-size: 36pt;
+  text-align: center;
+}
+
+/* two column text which sets the scene of the mission */
+.missionflavortext {
+  font-weight: bold;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.columntext {
+  column-count: 2;
+  margin-top: 2em;
+  column-gap: 20px;
+}
+
+.section {
+  display: inline-block
+  }
+
+/*centers an image in an element*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+table, th, td {
+  padding: 0em;
+  text-align: left;
+  border-spacing: 0px;
+  /*border: 1px solid black;*/
+  }
+
+/*Environment Table Orange Tab*/
+.environment-table-tab {
+  background-image: url('../images/tableheader-border.png');
+  background-size: 100% 100%;
+  /*background-position: right;*/
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  font-family: "stencilfont", "Saira Stencil One", "Black Ops One", "sans-serif";
+  color:Black;
+  font-size: 1.17em;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  padding-left: .4em;
+  margin-bottom: -1px; /*necessary because the bg image contains a 1px top border*/
+  }
+
+#environment-table {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  }
+
+#environment-table th, td {
+  border-bottom: 1px solid black;
+  }
+
+/*Header row (d6 | Results)*/
+#environment-table th {
+  font-family: "stencilfont", "Saira Stencil One", "Black Ops One", "sans-serif";
+  color:Black;
+  background: rgba(51,51,51,.5);
+  font-size: 1.17em;
+  text-transform: uppercase;
+  text-align: center;
+  }
+
+#environment-table th, td {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  }
+
+/*first column (d6)*/
+#environment-table th:nth-child(odd), td:nth-child(odd) {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: top;
+  font-weight: bold;
+  }
+
+/*second column (results)*/
+#environment-table th:nth-child(even), td:nth-child(even) {
+  text-align: left;
+  padding-right: 8px;
+  }
+
+/*even rows shading*/
+#environment-table tr:nth-child(even) {
+  background: rgba(153,153,153,.5);
+  }
+
+.tactic {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.tactic-title {
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  text-transform: uppercase;
+}
+
+.tactic-card {
+  border: 2px solid #c64f1a;
+  background: rgba(255,255,255,.5);
+  margin-bottom: 1em;
+}
+
+.tactic-header {
+  background-image: url('../images/tacticheader.png');
+  background-position: left;
+}
+
+.tactic-body {
+  padding-top: 18px;
+  padding-bottom: 2px;
+}
+
+.tactic-body-header {
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.tactic-footer {
+  background-image: url('../images/tacticfooter.png');
+  background-position: right;
+  text-align: right;
+}
+
+a {text-decoration: underline; color:#c64f1a; font-weight: bold;}
+a:hover {text-decoration: none;}
+p {margin-top: 0em;}
+b {font-weight: 900;}
+strong {font-weight: 900;}
+
+/* for scenario type */
+.scenariotype {text-transform: uppercase; font-weight: 900;}
+
+li {}
+ul {padding-left: 2em;}
+ol {text-indent: 0em}
