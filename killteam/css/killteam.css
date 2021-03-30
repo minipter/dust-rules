@@ -1,9 +1,10 @@
 @import "w3.css";
 
 @font-face {
-  font-family: "gunplay";
-  src: url("fonts/gunplay.tff") format('.tiff');
+  font-family: "Black Ops One";
+  src: url("fonts/BlackOpsOne-Regular.tff") format('.tiff');
   }
+
 
 html,body {
   font-size: 10pt;
@@ -21,7 +22,7 @@ body {
   }
 
 h1,h2,h3 {
-  font-family: "gunplay", "Saira Stencil One", "Black Ops One", "sans-serif";
+  font-family: "Saira Stencil One", "Black Ops One", "sans-serif";
   color:Black;
   font-weight: bold;
   margin-top: .2em;
