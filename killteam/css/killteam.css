@@ -1,10 +1,12 @@
-@import "w3.css";
-
 @font-face {
-  font-family: "Black Ops One";
-  src: url("fonts/BlackOpsOne-Regular.tff") format('.tiff');
+  font-family: BlackOpsOne;
+  src: url("../fonts/BlackOpsOne-Regular.ttf");
   }
 
+@font-face {
+  font-family: stencilfont;
+  src: url("../fonts/gunplay.ttf");
+  }
 
 html,body {
   font-size: 10pt;
@@ -22,12 +24,11 @@ body {
   }
 
 h1,h2,h3 {
-  font-family: "Saira Stencil One", "Black Ops One", "sans-serif";
+  font-family: "stencilfont", "Saira Stencil One", "Black Ops One", "sans-serif";
   color:Black;
-  font-weight: bold;
   margin-top: .2em;
-  margin-bottom: .1em;}
-  }
+  margin-bottom: .1em;
+}
 
 h4,h5,h6 {
   font-family: "Times New Roman",Times, serif;
@@ -48,24 +49,20 @@ h4 {margin-top: 0em; margin-bottom: 0em; padding-left: 0ex}
 
 /*KILLZONE: <KILLZONE NAME>*/
 .title {
-  font-family: "stencilfont", "Saira Stencil One", "Black Ops One", "sans-serif";
+  font-family: "stencilfont", "Saira Stencil One", "BlackOpsOne", "sans-serif";
   color:#c64f1a;
-  font-weight: bold;
   font-size: 36pt;
   text-align: center;
   text-transform: uppercase;
-  font-stretch: ultra-condensed;
   }
 
 /*Section title such as MISSIONS*/
 .subtitle {
-  font-family: "stencilfont", "Saira Stencil One", "Black Ops One", "sans-serif";
+  font-family: "stencilfont", "Saira Stencil One", "BlackOpsOne", "sans-serif";
   color: #333333;
-  font-weight: bold;
   font-size: 24pt;
   text-align: left;
   text-transform: uppercase;
-  font-stretch: ultra-condensed;
 }
 
 #missiongrid {
@@ -93,7 +90,6 @@ h4 {margin-top: 0em; margin-bottom: 0em; padding-left: 0ex}
 .missionblurb h3 {text-align: center;}
 .missionblurb a {margin: auto;}
 .missionblurb .missiontype {
-  font-weight: bold;
   margin-bottom: 1ex;
   text-align: center;
   background-color: pink;
@@ -112,9 +108,9 @@ h4 {margin-top: 0em; margin-bottom: 0em; padding-left: 0ex}
 .textcenter {text-align: center}
 
 .missionlinksubtitle {
-  font-weight: bold;
   margin-bottom: 1ex;
   text-align: center;
+  font-weight: bold;
 }
 
 /*Mission type, e.g. Matched Play, Narrative Play*/
@@ -131,14 +127,13 @@ h4 {margin-top: 0em; margin-bottom: 0em; padding-left: 0ex}
 }
 
 .missionname {
-  font-family: "stencilfont", "Saira Stencil One", "Black Ops One", "sans-serif";
+  font-family: "stencilfont", "Saira Stencil One", "BlackOpsOne", "sans-serif";
   color: #c64f1a;
-  font-weight: bold;
   font-size: 36pt;
   text-align: center;
 }
 
-/* two column text which sets the scene of the mission */
+/* column-spanning text which sets the scene of the mission */
 .missionflavortext {
   font-weight: bold;
   margin-bottom: 1em;
@@ -177,7 +172,7 @@ table, th, td {
   /*background-position: right;*/
   background-repeat: no-repeat;
   background-clip: border-box;
-  font-family: "stencilfont", "Saira Stencil One", "Black Ops One", "sans-serif";
+  font-family: "stencilfont", "Saira Stencil One", "BlackOpsOne", "sans-serif";
   color:Black;
   font-size: 1.17em;
   text-align: left;
@@ -185,10 +180,11 @@ table, th, td {
   padding-top: .1em;
   padding-bottom: .1em;
   padding-left: .4em;
-  margin-bottom: -1px; /*necessary because the bg image contains a 1px top border*/
+  box-sizing: border-box;
   }
 
 #environment-table {
+  box-sizing: border-box;
   border-top: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -200,7 +196,7 @@ table, th, td {
 
 /*Header row (d6 | Results)*/
 #environment-table th {
-  font-family: "stencilfont", "Saira Stencil One", "Black Ops One", "sans-serif";
+  font-family: "stencilfont", "Saira Stencil One", "BlackOpsOne", "sans-serif";
   color:Black;
   background: rgba(51,51,51,.5);
   font-size: 1.17em;
@@ -277,8 +273,8 @@ table, th, td {
 a {text-decoration: underline; color:#c64f1a; font-weight: bold;}
 a:hover {text-decoration: none;}
 p {margin-top: 0em;}
-b {font-weight: 900;}
-strong {font-weight: 900;}
+b {}
+strong {}
 
 /* for scenario type */
 .scenariotype {text-transform: uppercase; font-weight: 900;}
