@@ -7,7 +7,7 @@
   </head>
 <body>
 
-<div class="pagecontent">
+<div class="pagecontent" id="intro">
 <!-- KILLZONE: Intro-->
   <div class="title">Killzone: Drop Site</div>
   <p style="text-align: center"><a href="https://minipter.github.io/">Printable PDF can be found here</a></p>
@@ -69,7 +69,7 @@
   </div>
 </div>
 
-<div class="pagecontent">
+<div class="pagecontent" id="killzonetactics">
   <div class="subtitle" id="tactics">Killzone Tactics</div>
   <div class="columntext">
       <div class="tactic-card section">
@@ -155,32 +155,32 @@
 </div>
 
 <!-- Mission Preview Grid -->
-<div class="pagecontent">
-  <div class="subtitle" id="missions">Missions</div>
+<div class="pagecontent" id="missions">
+  <div class="subtitle">Missions</div>
     <p>The Drop Site represents a landing zone at which at least two kill teams find themselves engaged in combat. Missions vary - matched missions do not assume either kill team actually inserted via drop pods, but narrative missions may benefit if the insertion vehicle thematically fits one of the factions in the battle. For this style of narrative mission, the players are encouraged to find a suitable vehicle or even a piece of terrain (e.g. crater/burrow hole for Tyranids) to represent this insertion.</p>
 
 <div id="missiongrid">
   <div class="missionwrapper floatleft">
-    <div class="missionmap">
-      <a href="missions/strip-the-lz.html"><img src="images/stripthelz-3pods.png"></a>
+    <div class="missiongridmap">
+      <a href="#strip-the-lz"><img src="images/stripthelz-3pods.png"></a>
     </div>
-    <div class="missionblurb">
-      <div class="missionblurbheader">
-        <h3><a href="missions/strip-the-lz.html">STRIP THE LZ</a></h3>
-        <div class=missionlinksubtitle>Matched Play Mission</div>
+    <div class="missiongridblurb">
+      <div class="missiongridblurbheader">
+        <h3><a href="#strip-the-lz">STRIP THE LZ</a></h3>
+        <div class=missiongridtype>Matched Play Mission</div>
       </div>
       <p>Drop pods landed in a nearby area some time ago. Unfortunately two rival commanders insist on stripping the pods for war trophies, tech, intel or to deny the enemy the same. The original passengers have since departed, but beware the pod defense systems are still active!</p>
     </div>
   </div>
 
   <div class="missionwrapper floatright">
-    <div class="missionmap">
-      <a href="missions/late-arrival.html"><img src="images/latearrival.png"></a>
+    <div class="missiongridmap">
+      <a href="#late-arrival"><img src="images/latearrival.png"></a>
     </div>
-    <div class="missionblurb">
-      <div class="missionblurbheader">
-        <h3><a href="missions/late-arrival.html">LATE ARRIVAL</a></h3>
-        <div class=missionlinksubtitle>Matched Play Mission</div>
+    <div class="missiongridblurb">
+      <div class="missiongridblurbheader">
+        <h3><a href="#late-arrival">LATE ARRIVAL</a></h3>
+        <div class=missiongridtype>Matched Play Mission</div>
       </div>
       <p>Command has learned of a malfunctioning drop pod which has yet to arrive at the Drop Site. Sensors predict three possible landing locations within the LZ, and your team will deploy in advance of the pod’s arrival. This unmanned pod contains valuable intelligence - the mission is to extract this intel. Stay on your toes/claws/hover jets, there’s at least one other team out there looking to do the same!</p>
 
@@ -189,25 +189,25 @@
 
 
   <div class="missionwrapper floatleft">
-    <div class="missionmap">
-      <a href="missions/get-off-the-x.html"><img src="images/getoffthex.png"></a>
+    <div class="missiongridmap">
+      <a href="#get-off-the-x"><img src="images/getoffthex.png"></a>
     </div>
-    <div class="missionblurb">
-      <div class="missionblurbheader">
-        <h3><a href="missions/get-off-the-x.html">GET OFF THE X</a></h3>
-        <div class=missionlinksubtitle>Narrative Play Mission</div>
+    <div class="missiongridblurb">
+      <div class="missiongridblurbheader">
+        <h3><a href="#get-off-the-x">GET OFF THE X</a></h3>
+        <div class=missiongridtype>Narrative Play Mission</div>
       </div>
       <p>A landing or raid on the Drop Site has gone wrong. Heavy enemy presence means the team has to GET OFF THE X if they are to be able to fulfill their future missions. Escape or die trying!</p>
     </div>
   </div>
 
   <div class="missionwrapper floatright">
-    <div class="missionmap">
-      <a href="missions/destroy-the-depot.html"><img src="images/destroythedepot.png"></a>
+    <div class="missiongridmap">
+      <a href="#destroy-the-depot"><img src="images/destroythedepot.png"></a>
     </div>
-    <div class="missionblurb">
-        <h3><a href="missions/destroy-the-depot.html">DESTROY THE DEPOT</a></h3>
-        <div class=missionlinksubtitle>Narrative Play Mission</div>
+    <div class="missiongridblurb">
+        <h3><a href="#destroy-the-depot">DESTROY THE DEPOT</a></h3>
+        <div class=missiongridtype>Narrative Play Mission</div>
       <p>Alerted by the thunderous boom of a drop pod slamming down nearby, sentries position themselves to defend a munitions depot. A kill team spills from the pod, as defenders reinforce their initial sentries. Upon arrival, the first task for the sabotage strike force is to destroy a significant portion of the enemy’s supplies. The strike force will need as many of their team as they can for their main mission, so don’t get blown up in the process!</p>
     </div>
   </div>
@@ -254,11 +254,433 @@
 
       <p>Tactics might favor the attacking team in terms of fun-factor, but seems this has potential for trying to bog down players near the containers, as well as discouraging the attacking player from staying too close to the containers. </p>
 
-      <p>The attacking player may also have a tough decision to save command points to extend the battle to round 5 or to use those command points to secure victory on turn 4.</p>
+      <p>The attacking player may also have a tough decision to save command points to extend the battle to round 5 or to use those command points to secure victory on turn&nbsp;4.</p>
     </div>
 
   </div> <!-- closes columntext -->
 </div> <!-- closes page content -->
+
+<!-- MISSION #1 STRIP THE LZ -->
+<div class="pagecontent" id="strip-the-lz">
+  <div class="missiontype">MATCHED PLAY MISSION</div>
+  <div class="missionname">STRIP THE LZ</div>
+  <div class="missionflavortext">
+    <p>Three drop pods landed in a nearby area some time ago. Unfortunately two rival commanders insist on stripping the pods for war trophies, tech, intel or to deny the enemy the same. The original passengers have since departed, but beware the pod defense systems are still active!</p>
+  </div>
+
+  <div class="columntext">
+    <h3>THE KILL TEAMS</h3>
+    <p>This is a mission for two players. Each player chooses a Faction keyword, and the players reveal their choices at the same time. Then each player chooses a Battle-forged kill team (see page 62) that only includes models with the Faction.</p>
+
+    <div class="section">
+      <h3>THE BATTLEFIELD</h3>
+      <p>This mission is played on any Kill Zone which might reasonably be an outside environment, and should have 2-3 drop pods (or equivalent) in the center of the battlefield. Roll on the environmental table after all terrain and objective markers have been placed, but prior to the deployment phase. If the "Scanning for Hostiles" effect was rolled, the Late Arrivals drop pod begins with ACTIVATE DEFENSES tactic in effect upon arrival.</p>
+
+      <h4>Objectives</h4>
+      <p>Place 1 drop pod in the center of the table, and 2 additional drop pods halfway along a diagonal line between corners of the board. If just using 2 drop pods, place each drop pod 12" from the closest corner along the same diagonal line.</p>
+    </div>
+
+    <div class="section">
+      <h3>SCOUTING PHASE</h3>
+      <p>Do not resolve the Scouting phase in this mission.</p>
+    </div>
+
+    <div class="section">
+      <h3>DEPLOYMENT</h3>
+      <p>Deployment zones are from opposite corners not in line with the drop pods, in a triangle with 10" legs along each edge of the board.</p>
+
+      <p>The players roll off, and the player with the lower roll chooses which deployment zone will be their own. The other deployment zone will be their opponent's. The players then take it in turns to deploy one model from their kill team, starting with the player who lost the roll-off. Models must be set up wholly within their own deployment zone. Once the players have set up their models, deployment ends and the first battle round begins.</p>
+    </div>
+
+    <div class="section">
+      <h3>BATTLE LENGTH</h3>
+      <p>At the end of round 4, roll a D6. On a 3+ the battle continues. At the end of round 5, the battle continues on a roll of 4+. If not yet ended, the battle ends at the end of battle round 6.</p>
+    </div>
+
+    <div class="section">
+      <h3>VICTORY CONDITIONS</h3>
+      <p>At the end of each battle round award 1 VP to each player for every drop pod they have with models within 1" of the base of the pod. At the end of the game, for each drop pod, award 2 VPs to the player with the most models within 1" of the base of that drop pod in addition to the VP from the end of the battle round.</p>
+    </div>
+
+    <div class="section">
+      <img src="images/stripthelz-3pods.png" width=100% height=auto>
+      <img src="images/stripthelz-2pods.png" width=100% height=auto>
+    </div>
+  </div>
+</div>
+
+<!--MISSION # 2: Late Arrival  -->
+<div class="pagecontent" id="late-arrival">
+  <div class="missiontype">MATCHED PLAY MISSION</div>
+  <div class="missionname">LATE ARRIVAL</div>
+  <div class="missionflavortext">
+    <p>Command has learned of a malfunctioning drop pod which has yet to arrive at the Dropzone. You will deploy in advance of the pod's arrival, and command has predicted three possible landing locations within the LZ. This unmanned pod contains valuable intelligence, and it is your Kill Team's mission to extract this intel. Stay on your toes/claws/hover jets, there's at least one other team out there looking to do the same!</p>
+  </div>
+
+  <div class="columntext">
+      <h3>THE KILL TEAMS</h3>
+      <p>This is a mission for two players. Each player chooses a Faction keyword, and the players reveal their choices at the same time. Then each player chooses a Battle-forged kill team (see page 62) that only includes models with the Faction.</p>
+
+    <div class="section">
+      <h3>THE BATTLEFIELD</h3>
+      <p>This mission is played on any Kill Zone which might reasonably be an outside environment.</p>
+
+      <p>Roll on the environmental table after all terrain and objective markers have been placed, but prior to the deployment phase. If the "Scanning for Hostiles" effect was rolled, the Late Arrivals drop pod begins with ACTIVATE DEFENSES tactic in effect upon arrival.</p>
+
+      <h4>Objectives</h4>
+      <p>Place 3 numbered objective markers no closer than 5" from each other, 5" from any board edge or deployment zone, and 3" from any terrain. For matched play, place one marker equidistant from each deployment zone along the centerline of the board. Place the other two markers equidistant from the centerline of the board, parallel to the long edge of the board (see map below).</p>
+    </div>
+
+    <div class="section">
+      <h3>SCOUTING PHASE</h3>
+      <p>Do not resolve the Scouting phase in this mission.</p>
+    </div>
+
+    <div class="section">
+      <h3>DEPLOYMENT</h3>
+      <p>Deployment zones are within 9" of the short edge of the board.</p>
+
+      <p>The players roll off, and the player with the lower roll chooses which deployment zone will be their own. The other deployment zone will be their opponent's. The players then take it in turns to deploy one model from their kill team, starting with the player who lost the roll-off. Models must be set up wholly within their own deployment zone. Once the players have set up their models, deployment ends and the first battle round begins.</p>
+    </div>
+
+    <div class="section">
+      <h3>BATTLE LENGTH</h3>
+      <p>The battle ends when one side has successfully completed using the EXTRACT INTEL tactic OR at the end of battle round 6.</p>
+    </div>
+
+    <div class="section">
+      <h3>VICTORY CONDITIONS</h3>
+      <p>The side who successfully completes the Extract Intel tactic before the end of battle round 6 wins. If the battle automatically ends at the end of round 6, the player with the most models within 1" of the base of the late arrival drop pod is the winner.</p>
+
+      <h4>Pod Arrival</h4>
+      <p>Starting on turn 2, roll a D6 at the beginning of each movement phase. On a 4+ a drop pod arrives at one of the objective markers. On turn 3, add +1 to the die roll. The pod automatically arrives at the beginning of turn 4. On an unmodified roll of 6, the pod arrives with ACTIVATE DEFENSES tactic in effect.</p>
+
+      <p>If the "Scanning for Hostiles" effect was rolled on the Killzone Environmental Effects table at the beginning of the battle, the Late Arrivals drop pod begins with ACTIVATE DEFENSES tactic in effect.</p>
+
+      <h4>Pod Location and Placement</h4>
+      <p>Roll a D3 to determine which marker.</p>
+
+      <p>Any model within 2" of the objective marker must be immediately moved to the nearest spot 2" away from the
+      marker and immediately suffers D3 mortal wounds.</p>
+
+      <p>Place a drop pod model at this location. Players may use the EXTRACT INTEL tactic at this drop pod until the end of
+      the game.</p>
+    </div>
+    <div class="section">
+      <img src="images/latearrival.png" width=100% height=auto>
+    </div>
+  </div>
+</div>
+
+<div class="pagecontent">
+  <div class="columntext">
+    <div class="section">
+      <div class="tactic-card section">
+        <div class="tactic tactic-title tactic-header">
+          <h3>Extract Intel</h3>
+        </div>
+        <div class="tactic tactic-body">
+          <p><span class="tactic-body-header">Mission Tactic</span><br>
+            During the fight phase, activate a model which has not fought yet, is within 1” of the Late Arrival drop pod.</p>
+          <p>This model may not move, react, use psychic powers, shoot, or fight during the next turn. At the end of the fight phase on the following turn, if this model is unshaken and more than 1” from any enemy model, they have successfully extracted the intel, earning 3 Victory Points and the game immediately ends. </p>
+        </div>
+        <div class="tactic tactic-title tactic-footer">
+          <h3>1 command point</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MISSION #3 GET OFF THE X -->
+<div class="pagecontent" id="get-off-the-x">
+  <div class="missiontype">Narrative Play Mission</div>
+  <div class="missionname">GET OFF THE X</div>
+  <div class="missionflavortext">
+    <p>A landing or raid on the Drop Site has gone wrong. Heavy enemy presence means the team has to GET OFF THE X if they are to be able to fulfill their future missions. Escape or die trying!</p>
+  </div>
+
+  <div class="columntext">
+    <h3>THE KILL TEAMS</h3>
+    <p>This is a mission for two players.</p>
+
+    <div class="section">
+      <h3>THE BATTLEFIELD</h3>
+      <p>This mission is played on any Kill Zone which might reasonably be a landing zone for the drop pods or landing craft available for the players. Drop pods are likely well suited for outdoor environments, but subterranean drills or similar might work nicely for some underground or enclosed environs.</p>
+
+      <p>Roll on the environment table after all terrain and objective markers have been placed, but prior to the deployment phase.</p>
+    </div>
+
+    <div class="section">
+      <h3>SCOUTING PHASE</h3>
+      <p>Do not resolve the Scouting phase in this mission.</p>
+    </div>
+
+    <div class="section">
+      <h3>DEPLOYMENT</h3>
+      <p>The players roll off, and the player with the lower roll chooses if they will be the attacker or defender, and which deployment zone will be their own. The other deployment zone will be their opponent’s.</p>
+
+      <p>In this mission, the attacker deploys in the circle around the central drop pod.</p>
+
+      <p>The players then take it in turns to deploy one model from their kill team, starting with the player who lost the roll-off. Models must be set up wholly within their own deployment zone. Once the players have set up their models, deployment ends and the first battle round begins.</p>
+    </div>
+
+    <div class="section">
+      <h3>BATTLE LENGTH</h3>
+      <p>If the attacker moves a model off of the edge of the board (see below), the battle concludes at the end of the following battle round. </p>
+
+      <p>If at the end round 4 the attacker has not moved a single model off the edge of the board, roll a D6. On a 3+ the battle continues. At the end of round 5, the battle continues on a roll of 4+. The battle automatically concludes at the end of battle round 6 regardless of if the attacker moved their first model off of the board during round 6.</p>
+    </div>
+
+    <div class="section">
+      <h3>VICTORY CONDITIONS</h3>
+      <p>During the movement phase, the attacker may move any models off of a single board edge. Keep track of which models leave by which board edge using a method such as leaving these models alongside this board edge until the VP are counted.</p>
+      <p>At the end of the battle, if the Attacker has moved at least a single model off of any edge of the board, they are awarded 1 VP. If the Attacker has moved 50% or more of their models off the <em>same edge</em> of the board, award 3 VPs instead. Defenders are awarded 1 VP for each enemy model taken out of action.</p>
+    </div>
+
+    <div class="section">
+      <h3>ALTERNATIVE VICTORY CONDITIONS</h3>
+      <p><em>(More complicated, but more balanced for high model-count kill teams)</em></p>
+      <p>During the movement phase, the attacker may move any models off of a single board edge. Keep track of which models leave by which board edge using a method such as leaving these models alongside this board edge until the VP are counted. (same as above)</p>
+
+      <p>At the end of the battle, if the Attacker has moved 20% of their models rounding down (minimum of one model) off of the edge of the board, they are awarded 1 VP. If the Attacker has moved 50% or more of their models off the edge of the board, award 3 VPs instead.</p>
+
+      <p>Defenders 1 vp for each 20% of the enemy models taken out of action.</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="pagecontent">
+  <div class="columntext" style="max-height: 4.5in">
+    <div class="section">
+      <div class="tactic-card section">
+        <div class="tactic tactic-title tactic-header">
+          <h3>Finish the Job</h3>
+        </div>
+        <div class="tactic tactic-body">
+          <p><span class="tactic-body-header">Mission Tactic</span><br>
+          Use at the end of the fight phase when you have two or more unshaken models within 1” of a single enemy model, and more than 1” from all other enemy models. Your models may fight again as if it were the fight phase. They do not count as having charged this turn.</p>
+        </div>
+        <div class="tactic tactic-title tactic-footer">
+          <h3>1 command point</h3>
+        </div>
+      </div>
+
+      <div class="tactic-card section">
+        <div class="tactic tactic-title tactic-header">
+          <h3>Burst 'em Down</h3>
+        </div>
+        <div class="tactic tactic-body">
+          <p><span class="tactic-body-header">Mission Tactic</span><br>
+          A single model may fire an assault weapon as if it were a pistol this round. This weapon fires one fewer shot than normal if used in this way, to a minimum of Assault (Pistol) 1.</p>
+        </div>
+        <div class="tactic tactic-title tactic-footer">
+          <h3>1 command point</h3>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px"></div> <!-- Spacer for columns -->
+
+      <div class="tactic-card section">
+        <div class="tactic tactic-title tactic-header">
+          <h3>Close with the Enemy</h3>
+        </div>
+        <div class="tactic tactic-body">
+          <p><span class="tactic-body-header">Mission Tactic</span><br>
+            Use when declaring a Charge against a single enemy model. Instead of rolling for a charge as normal, the model may roll as if it were an advance move (including any abilities which allow rerolls for advances or charges).</p>
+          <p>Charged models may react as normal.</p>
+          <p>The both models do not count as having charged this turn for both the shooting (e.g. may fire a pistol) and fight phases (e.g. does not fight during the <em>Hammer of Wrath</em> portion of the phase).</p>
+          <p>May be used multiple times during the movement phase.</p>
+        </div>
+        <div class="tactic tactic-title tactic-footer">
+          <h3>1 command point</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="images/getoffthex.png" width=100% height=auto>
+  </div>
+
+</div>
+
+
+  <!-- MISSION #4 DESTROY THE DEPOT -->
+  <div class="pagecontent" id="destroy-the-depot">
+    <div class="missiontype">Narrative Play Mission</div>
+    <div class="missionname">DESTROY THE DEPOT</div>
+    <div class="missionflavortext">
+      <p>Alerted by the thunderous boom of a drop pod slamming down nearby, sentries position themselves to defend a munitions depot. A kill team spills from the pod, as defenders reinforce their initial sentries. Upon arrival, the first task for the sabotage strike force is to destroy a significant portion of the enemy’s supplies. The strike force will need as many of their team as they can for their main mission, so don’t get blown up in the process!
+      </p>
+    </div>
+
+    <div class="columntext">
+      <h3>THE KILL TEAMS</h3>
+      <p>This is a mission for two players. Each player chooses a Faction keyword, and the players reveal their choices at the same time. Then each player chooses a Battle-forged kill team (see page 62) that only includes models with the Faction keyword they chose.</p>
+
+      <p>Muster Killteams prior deciding which player will be attacker and which player will be defender. See BATTLEFIELD section for details on selecting roles.</p>
+
+      <div class="section">
+        <h3>THE BATTLEFIELD</h3>
+        <p>This mission is played on any Kill Zone which might reasonably be an outside environment. It uses 3 large munition containers from Kill Zone: Sector Munitorium, and 5-8 pieces of scatter terrain roughly equal in size. Decide on the number of pieces of scatter terrain before deciding on which player will be the attacker or defender.</p>
+
+        <p>The players roll off, and the player with the higher roll chooses to be either the attacker or the defender during this mission.</p>
+
+        <p>On the mission map, note the 8 dashed set-up lines radiating from the center of the board to the center of each board edge as well as each corner. The defender places three munitorium containers such that they touch at least two lines dividing the board, and no container touches the same lines as the other containers. The defender then places the scatter terrain touching these lines, with a maximum of one piece of scatter terrain per line, and such that all pieces are outside of the attackers deployment zone.</p>
+
+        <p>Roll on the environmental table after all terrain and objective markers have been placed, but prior to the deployment phase.</p>
+      </div>
+
+      <div class="section">
+        <h3>SCOUTING PHASE</h3>
+        <p>Do not resolve the Scouting phase in this mission.</p>
+      </div>
+
+      <div class="section">
+        <h3>DEPLOYMENT</h3>
+        <p>The defending player must deploy 25% of their models (rounding up) within 15” of their edge of the board. After these models are deployed, the attacking player places the drop pod within their deployment zone, at least 3” from any terrain. The attacker must then deploy their entire kill team within 1” of the base of the drop pod. All models must be set up wholly within their own deployment zone.</p>
+
+        <p>Defender deploys the remainder of their kill team at the beginning of their movement phase in the first battle round. All models placed in this way must start with their base in contact with the short board edge in the defender’s deployment zone.</p>
+      </div>
+
+      <div class="section">
+        <h3>INITIATIVE PHASE</h3>
+        <p>The attackers automatically win the first initiative phase. The defending player may not use the DECISIVE MOVE, DECISIVE SHOT or DECISIVE ATTACK tactics in the first battle round.</p>
+
+        <p>The players then take it in turns to deploy one model from their kill team, starting with the player who lost the roll-off. Models must be set up wholly within their own deployment zone. Once the players have set up their models, deployment ends and the first battle round begins.</p>
+      </div>
+
+      <div class="section">
+        <h3>BATTLE LENGTH</h3>
+        <p>At the end of battle round 4, the attacker may choose to use the DELAY ENEMY REINFORCEMENTS for 3 command points to extend the battle by a single round. Otherwise the battle concludes at the end of round 4. </p>
+      </div>
+
+      <div class="section">
+        <h3>VICTORY CONDITIONS</h3>
+        <p>Attacker must destroy two munitorum containers using the DETONATE CHARGES tactic.</p>
+      </div>
+
+      <div class="section">
+        <h3>ALTERNATIVE VICTORY CONDITIONS</h3>
+      <p><em>(More challenging for Defender)</em></p>
+      <p><b>Attacker Win:</b> 2-3 containers destroyed<br>
+      <b>Draw:</b> 1 container destroyed<br>
+      <b>Defender Win:</b> 0 containers destroyed</p>
+
+      </div>
+    </div>
+  </div>
+
+<div class="pagecontent">
+  <div class="columntext">
+      <div class="tactic-card section">
+        <div class="tactic tactic-title tactic-header">
+          <h3>WIRE CHARGES</h3>
+        </div>
+        <div class="tactic tactic-body">
+          <p><span class="tactic-body-header">Attacker Tactic</span><br>
+            Use at the end of the movement phase. Select an unshaken friendly model within 1” of a munitorum container and more than 1” from an enemy model. This model may not shoot, fight or use psychic powers this turn. If this model survives to the end of the fight phase, they have successfully rigged explosives on the container - place an explosives token on the container. A container with an explosives token may be detonated using the DETONATE CHARGES tactic.</p>
+          <p>May be used more than once per phase.</p>
+        </div>
+        <div class="tactic tactic-title tactic-footer">
+          <h3>1 command point</h3>
+        </div>
+      </div>
+
+      <div class="tactic-card section">
+        <div class="tactic tactic-title tactic-header">
+          <h3>DETONATE CHARGES</h3>
+        </div>
+        <div class="tactic tactic-body">
+          <p><span class="tactic-body-header">Attacker Tactic</span><br>
+            Use at the end of the morale phase if you have at least one unshaken model more than 1” from an enemy model. Select a munitorium container which has no friendly models within 2” and which has an explosives token (using WIRE THE CHARGES tactic). Remove this container. Any enemy models within 2” of the container suffer D3 mortal wounds.</p>
+          <p>May be used more than once per phase.</p>
+        </div>
+        <div class="tactic tactic-title tactic-footer">
+          <h3>1 command point</h3>
+        </div>
+      </div>
+
+      <div class="tactic-card section">
+        <div class="tactic tactic-title tactic-header">
+          <h3>WELL GUARDED DEPOT</h3>
+        </div>
+        <div class="tactic tactic-body">
+          <p><span class="tactic-body-header">Defender Tactic</span><br>
+            Play at the beginning of the deployment phase. One additional model may be set up during this phase. Defender begins the game with 2 fewer command points.</p>
+        </div>
+        <div class="tactic tactic-title tactic-footer">
+          <h3>2 command point</h3>
+        </div>
+      </div>
+  <p></p> <!-- breaks the column -->
+    <div class="section"> <!-- breaks the column -->
+      <div class="tactic-card section">
+        <div class="tactic tactic-title tactic-header">
+          <h3>DELAY ENEMY REINFORCEMENTS</h3>
+        </div>
+        <div class="tactic tactic-body">
+          <p><span class="tactic-body-header">Defender Tactic</span><br>
+            May only be played at the end of battle round 4. The battle concludes at the end of battle round 5.</p>
+        </div>
+        <div class="tactic tactic-title tactic-footer">
+          <h3>3 command point</h3>
+        </div>
+      </div>
+
+      <div class="tactic-card section">
+        <div class="tactic tactic-title tactic-header">
+          <h3>WELL GUARDED DEPOT</h3>
+        </div>
+        <div class="tactic tactic-body">
+          <p><span class="tactic-body-header">Defender Tactic</span><br>
+            Play at the beginning of the deployment phase. One additional model may be set up during this phase. Defender begins the game with 2 fewer command points.</p>
+        </div>
+        <div class="tactic tactic-title tactic-footer">
+          <h3>2 command point</h3>
+        </div>
+      </div>
+
+      <div class="tactic-card section">
+        <div class="tactic tactic-title tactic-header">
+          <h3>CUT THE WIRES</h3>
+        </div>
+        <div class="tactic tactic-body">
+          <p><span class="tactic-body-header">Defender Tactic</span><br>
+            Use at the end of the movement phase. Select an unshaken friendly model more than 1” from an enemy model and within 1” of a munitorum container with an explosives token (from WIRE CHARGES tactic) and. This model may not shoot, fight or use psychic powers this turn. If this model remains on the board at the end of the fight phase, they have successfully disarmed any explosives on the container - remove any explosives tokens from this container.</p>
+          <p>May be used more than once per phase.</p>
+        </div>
+        <div class="tactic tactic-title tactic-footer">
+          <h3>1 command point</h3>
+        </div>
+      </div>
+
+      <div class="tactic-card section">
+        <div class="tactic tactic-title tactic-header">
+          <h3>USE ‘EM OR LOSE ‘EM</h3>
+        </div>
+        <div class="tactic tactic-body">
+          <p><span class="tactic-body-header">Defender Tactic</span><br>
+            More than one model may use grenade weapons this battle round. May only be used once per battle.</p>
+        </div>
+        <div class="tactic tactic-title tactic-footer">
+          <h3>1 command point</h3>
+        </div>
+      </div>
+    </div> <!-- closes section used for column break -->
+
+  </div> <!-- closes columntext -->
+</div> <!-- closes page content -->
+
+<div class="pagecontent">
+  <div class="section" style="padding-top: 40px;">
+    <img src="images/destroythedepot.png" width=100% height=auto>
+  </div>
+</div> <!-- closes page content -->
+
 
 </body>
 </html>
