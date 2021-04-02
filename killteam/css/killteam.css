@@ -274,7 +274,7 @@ table, th, td {
 .tactic-card {
   border: 2px solid #c64f1a;
   background: rgba(255,255,255,.5);
-  margin-bottom: 1em;
+  margin-bottom: 15px;
   max-width: 3.25in;
 }
 
